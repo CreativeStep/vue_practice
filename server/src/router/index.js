@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import page1 from '@/components/page_1'
+import create from '@/components/createEvent'
 
 Vue.use(Router)
 
@@ -15,6 +16,10 @@ export default new Router({
       path: '/page_1',
       name: 'page1',
       component: page1
+    }, {
+      path: '/create',
+      name: 'create',
+      component: create
     }
   ]
 })
