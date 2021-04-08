@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import page1 from '@/components/page_1'
 import create from '@/components/createEvent'
+import order from '@/components/eventOrder'
 
 Vue.use(Router)
 
@@ -20,6 +21,10 @@ export default new Router({
       path: '/create',
       name: 'create',
       component: create
+    }, {
+      path: '/order',
+      name: 'order',
+      component: order
     }
   ]
 })
