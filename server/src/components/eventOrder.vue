@@ -8,14 +8,14 @@
 
 <script>
 export default {
-  name: 'HelloWorld1',
+  name: 'CheckEventOrder',
   data () {
     return {
       msg: 'order of events'
     }
   },
   beforeCreate () {
-    console.log('beforeCreate')
+    console.log('beforeCreate: ここはAt this point, events and lifecycle have been initialized.')
   },
   created () {
     console.log('created')
@@ -26,12 +26,17 @@ export default {
   mounted () {
     console.log('mounted')
   },
+  beforeUpdate () {
+    console.log('beforeUpdate')
+  },
+  updated () {
+    console.log('updated')
+  },
   beforeDestroy () {
-    console.log('beforeDestroy')
+    alert('beforeDestroy')
   },
   destroyed () {
-    console.log('mounted')
-    alert('do you want destroy?')
+    alert('destroyed')
   }
 }
 </script>
