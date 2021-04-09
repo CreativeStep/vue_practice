@@ -46,19 +46,19 @@ export default {
     console.log('mountedフック完了')
   },
   beforeUpdate () {
-    console.log('mountedフック開始')
-    alert('mounted')
-    console.log('cmountedフック完了')
+    console.log('beforeUpdateフック開始')
+    alert('beforeUpdate')
+    console.log('beforeUpdateフック完了')
   },
   updated () {
-    console.log('mountedフック開始')
-    alert('mounted')
-    console.log('cmountedフック完了')
+    console.log('updatedフック開始')
+    alert('updated')
+    console.log('updatedフック完了')
   },
   beforeDestroy () {
-    console.log('mountedフック開始')
-    alert('mounted')
-    console.log('cmountedフック完了')
+    console.log('beforeDestroyフック開始')
+    alert('beforeDestroy')
+    console.log('beforeDestroyフック完了')
   },
   destroyed () {
     console.log('destroyedフック開始')
