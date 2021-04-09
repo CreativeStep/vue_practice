@@ -38,7 +38,7 @@ export default {
   beforeMount () {
     console.log('beforeMountフック開始')
     alert('beforeMount')
-    console.log('createdフック完了')
+    console.log('beforeMountフック完了')
   },
   mounted () {
     console.log('mountedフック開始')
