@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'page_1',
   data () {
     return {
       messages: [],
